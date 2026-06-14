@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "title": "Kodai Global Exports | Tapioca Starch, Sago & Agro Products from India",
+    "description": "Kodai Global Exports supplies export-ready tapioca starch, sago, tapioca flour, and related agro products from Tamilnadu, India with structured documentation and reliable communication.",
+    "keywords": [
+      "Kodai Global Exports",
+      "tapioca starch exporter India",
+      "sago exporter Tamilnadu",
+      "sabudana supplier India",
+      "tapioca flour export",
+      "food grade tapioca starch",
+      "industrial grade tapioca starch",
+      "agro products exporter India",
+      "tapioca products Tamilnadu"
+    ],
+    "openGraph": {
+      "title": "Kodai Global Exports | Tapioca Products from India",
+      "description": "Export-ready tapioca starch, sago, and agro products supplied with clear process and documentation.",
+      "type": "website"
+    }
+  },
+  "hero": {
+    "slides": [
+      {
+        "badge": "Global Tapioca Exporters",
+        "title": "Industrial & Food Grade {Tapioca Starch}",
+        "subtitle": "Delivering meticulously refined tapioca starch for international food manufacturing and industrial applications. Sourced directly from premier Tamil Nadu processing facilities.",
+        "imageSrc": "/images/home-carousel-1.webp",
+        "imageAlt": "Premium tapioca starch powder in white bowl",
+        "cta": {
+          "label": "View Specifications",
+          "href": "/products#tapioca-starch"
+        }
+      },
+      {
+        "badge": "Versatile Ingredient",
+        "title": "High Quality {Tapioca Flour}",
+        "subtitle": "Finely milled cassava product valued for its light texture and versatility. Ideal for baking, snacks, and gluten-free food preparations.",
+        "imageSrc": "/images/home-carousel-2.webp",
+        "imageAlt": "Tapioca flour in a bowl",
+        "cta": {
+          "label": "View Flour",
+          "href": "/products#tapioca-flour"
+        }
+      },
+      {
+        "badge": "Premium Sago Supply",
+        "title": "Authentic Indian {Sago Pearls}",
+        "subtitle": "Exporting uniform, high-yield sago pearls perfect for culinary applications and desserts globally. Guaranteed quality and purity in every shipment.",
+        "imageSrc": "/images/home-carousel-3.webp",
+        "imageAlt": "White sago pearls macro shot",
+        "cta": {
+          "label": "Explore Sago",
+          "href": "/products#sago-varieties"
+        }
+      },
+      {
+        "badge": "Finest Spices",
+        "title": "Hand-Selected Indian {Cloves}",
+        "subtitle": "Bringing the world the intense aroma and flavor of authentic Indian cloves. Carefully harvested and graded for the highest international culinary standards.",
+        "imageSrc": "/images/home-carousel-4.webp",
+        "imageAlt": "Aromatic whole cloves",
+        "cta": {
+          "label": "View Spices",
+          "href": "/products#clove"
+        }
+      },
+      {
+        "badge": "South Indian Coffee",
+        "title": "Single-Origin {Coffee Beans}",
+        "subtitle": "Sourcing robust and aromatic coffee beans from the high-altitude estates of Southern India. Tailored export solutions for discerning roasters worldwide.",
+        "imageSrc": "/images/home-carousel-5.webp",
+        "imageAlt": "Freshly roasted coffee beans",
+        "cta": {
+          "label": "Discover Coffee",
+          "href": "/products#coffee-beans"
+        }
+      }
+    ]
+  },
+  "intro": {
+    "tagline": "Who We Are",
+    "imageSrc": "/images/who-we-are.png",
+    "imageAlt": "Tapioca starch, sago, cassava roots, and agro products displayed outdoors",
+    "featureDescription": "Structured processes, documentation, and communication built for dependable export partnerships.",
+    "title": "A professionally managed agro export company with a {process-first} foundation",
+    "paragraphs": [
+      "Kodai Global Exports supplies tapioca starch, sago, tapioca flour, and related tapioca products for buyers across food, wholesale, and export markets.",
+      "Our operations are guided by defined workflows, regulatory awareness, and practical market understanding. We keep product discussions clear, documentation organised, and shipment coordination responsive.",
+      "We believe long-term export relationships are built through consistency, transparency, ethical conduct, and steady performance at every stage of business."
+    ],
+    "highlights": [
+      "Quality-aligned products",
+      "Export-ready documentation",
+      "Responsive communication"
+    ]
+  },
+  "markets": {
+    "tagline": "Global Markets We Serve",
+    "title": "Supporting tapioca buyers across {international markets}",
+    "description": "We work with buyers who expect reliable packing, clear export documents, and timely communication across each shipment.",
+    "mapAlt": "Global markets map for Kodai Global Exports agro product supply",
+    "countries": [
+      "Ghana",
+      "Saudi Arabia",
+      "Zimbabwe",
+      "South Africa",
+      "Bangladesh",
+      "Malaysia"
+    ]
+  },
+  "certifications": {
+    "tagline": "Export Readiness",
+    "title": "Documentation and compliance support for {international shipments}",
+    "logos": [
+      {
+        "name": "FSSAI",
+        "imageSrc": "/images/fssai.png",
+        "imageAlt": "FSSAI registration or license support"
+      },
+      {
+        "name": "IEC",
+        "imageSrc": "/images/iec.png",
+        "imageAlt": "Import Export Code documentation"
+      },
+      {
+        "name": "APEDA",
+        "imageSrc": "/images/apeda.png",
+        "imageAlt": "APEDA export readiness"
+      },
+      {
+        "name": "Chemexcil",
+        "imageSrc": "/images/chemexcil.jpg",
+        "imageAlt": "Chemexcil registration"
+      },
+      {
+        "name": "Natural Product",
+        "imageSrc": "/images/natural_product.png",
+        "imageAlt": "Natural Product certification"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Looking for tapioca product details?",
+    "description": "Explore our product range or connect with our export team for packing sizes, product specifications, and shipment documentation.",
+    "primary": {
+      "label": "View Products",
+      "href": "/products"
+    },
+    "secondary": {
+      "label": "Contact Exports Team",
+      "href": "/contact"
+    }
+  }
+}

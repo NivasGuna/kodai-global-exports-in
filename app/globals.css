@@ -1,0 +1,148 @@
+@import 'tailwindcss';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  scrollbar-gutter: stable;
+}
+
+:root {
+  --kodai-green: #2d7a4f;
+  --kodai-green-dark: #1f5c3a;
+  --kodai-dark: #1a1f2e;
+  --kodai-ivory: #fffff4;
+  --kodai-warm-white: #fcfbfa;
+  --kodai-soft-beige: #f3efe6;
+  --kodai-charcoal: #1c2331;
+  --kodai-gold: #c5a059;
+  --kodai-olive: #6b705c;
+  --kodai-header-height: 80px;
+  --kodai-nav-surface: rgba(255, 255, 255, 0.92);
+  --kodai-nav-border: rgba(28, 35, 49, 0.06);
+  --kodai-nav-text: #4b5563;
+  --kodai-nav-active: var(--kodai-charcoal);
+  --kodai-nav-active-ring: rgba(28, 35, 49, 0.15);
+  --kodai-nav-accent: rgba(197, 160, 89, 0.6);
+}
+
+@theme {
+  --color-kodai-green: var(--kodai-green);
+  --color-kodai-green-dark: var(--kodai-green-dark);
+  --color-kodai-dark: var(--kodai-dark);
+  --color-kodai-ivory: var(--kodai-ivory);
+  --color-kodai-warm-white: var(--kodai-warm-white);
+  --color-kodai-soft-beige: var(--kodai-soft-beige);
+  --color-kodai-charcoal: var(--kodai-charcoal);
+  --color-kodai-gold: var(--kodai-gold);
+  --color-kodai-olive: var(--kodai-olive);
+  --color-kodai-nav-active: var(--kodai-nav-active);
+  --font-playfair: var(--font-playfair);
+  --font-inter: var(--font-inter);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: var(--kodai-charcoal);
+  background: #fffdf8;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--kodai-header-height);
+}
+
+/* ─── Hero text shadow utility for readability on vivid images ─── */
+.hero-text-shadow {
+  text-shadow:
+    0 3px 22px rgba(0, 0, 0, 0.72),
+    0 1px 5px rgba(0, 0, 0, 0.45);
+}
+
+.hero-text-shadow-sm {
+  text-shadow:
+    0 2px 12px rgba(0, 0, 0, 0.6),
+    0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+.full-bleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* ─── Scroll-margin for product cards (no :target outline to avoid stale highlights) ─── */
+[id] {
+  scroll-margin-top: calc(var(--kodai-header-height) + 2rem);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(45, 122, 79, 0.3);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(45, 122, 79, 0.5);
+}
+
+/* ─── Premium section visual enhancements ─── */
+.section-grain {
+  position: relative;
+}
+
+.section-grain::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
+/* ─── Subtle animated gradient border for premium cards ─── */
+.premium-border {
+  position: relative;
+}
+
+.premium-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(197, 160, 89, 0.3),
+    transparent 40%,
+    transparent 60%,
+    rgba(197, 160, 89, 0.15)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+

@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "title": "FAQ & Reviews | Kodai Global Exports",
+    "description": "Find answers about Kodai Global Exports tapioca starch, sago, packing sizes, export documents, payment terms, and read reviews from international buyers.",
+    "keywords": [
+      "Kodai Global Exports FAQ",
+      "tapioca starch export FAQ",
+      "sago supplier reviews",
+      "tapioca products India",
+      "agro export documents India"
+    ],
+    "openGraph": {
+      "title": "FAQ & Reviews | Kodai Global Exports",
+      "description": "Frequently asked questions and customer reviews for tapioca product exports from India.",
+      "type": "website"
+    }
+  },
+  "hero": {
+    "badge": "Export Resources",
+    "imageSrc": "/images/faq-hero.webp",
+    "imageAlt": "Global trade and shipping logistics",
+    "title": "Global Trade & {Documentation}",
+    "subtitle": "Streamline your international procurement. Access our detailed guide on export compliance, logistics protocols, shipping terms, and supply chain transparency.",
+    "highlights": [
+      "Export Compliance",
+      "Shipping & Logistics",
+      "Documentation Support"
+    ],
+    "buttonText": "View Export FAQ",
+    "buttonHref": "#faq-list"
+  },
+  "contact": {
+    "tagline": "Still need details?",
+    "imageSrc": "/images/product-cta.webp",
+    "imageAlt": "Tapioca starch and sago products arranged for buyer enquiry support",
+    "title": "Talk to our export team",
+    "description": "Share your product requirement, destination country, and packing preference. We will guide you with specifications, documents, and next steps.",
+    "buttonText": "Contact Support"
+  },
+  "faq": {
+    "tagline": "FAQ",
+    "title": "Questions buyers ask most often"
+  },
+  "reviews": {
+    "tagline": "Buyer Experiences",
+    "title": "Trusted by {global tapioca buyers}"
+  },
+  "cta": {
+    "title": "Need a clearer export answer?",
+    "description": "Send us your product requirement, destination country, and packing preference. We will respond with practical details for the next step.",
+    "buttonText": "Send an Enquiry",
+    "buttonHref": "/contact",
+    "imageSrc": "/images/faq-cta.webp",
+    "imageAlt": "Tapioca and sago products arranged for FAQ and buyer support"
+  }
+}

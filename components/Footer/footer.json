@@ -1,0 +1,63 @@
+{
+  "branding": {
+    "name": "Kodai Global Exports",
+    "description": "A dependable agro export company from Tamilnadu, India, supplying tapioca starch, sago, and related tapioca products with clear documentation and consistent execution."
+  },
+  "sections": [
+    {
+      "title": "Quick Links",
+      "links": [
+        { "label": "Home", "href": "/" },
+        { "label": "Products", "href": "/products" },
+        { "label": "About Us", "href": "/about" },
+        { "label": "FAQ's & Reviews", "href": "/faq-review" },
+        { "label": "Contact Us", "href": "/contact" }
+      ]
+    },
+    {
+      "title": "Products",
+      "links": [
+        { "label": "Tapioca Starch (Food Grade)", "href": "/products#tapioca-starch-food-grade" },
+        { "label": "Tapioca Starch (Industrial Grade)", "href": "/products#tapioca-starch-industrial-grade" },
+        { "label": "Tapioca Flour", "href": "/products#tapioca-flour" },
+        { "label": "Sago (Sabudana)", "href": "/products#sago-sabudana" },
+        { "label": "Glassy Nylon", "href": "/products#glassy-nylon" },
+        { "label": "Mini Nylon", "href": "/products#mini-nylon" },
+        { "label": "Milk White", "href": "/products#milk-white" },
+        { "label": "Modidana", "href": "/products#modidana" },
+        { "label": "Pappads", "href": "/products#pappads" }
+      ]
+    },
+    {
+      "title": "Contact Us",
+      "info": {
+        "address": "Kodai Global Exports\nPeriyakulam, Theni District - 625601, Tamilnadu, India.",
+        "email": "kge@kodaiglobalexports.com",
+        "phone": "+91 9677447233"
+      }
+    }
+  ],
+  "socials": [
+    {
+      "platform": "Facebook",
+      "href": "https://www.facebook.com/profile.php?id=61560901773192",
+      "icon": "Facebook"
+    },
+    {
+      "platform": "Instagram",
+      "href": "https://www.instagram.com/kodaiexports/",
+      "icon": "Instagram"
+    },
+    {
+      "platform": "Linkedin",
+      "href": "https://www.linkedin.com/in/babuji-sowrirajan-7b95883ab/",
+      "icon": "Linkedin"
+    },
+    {
+      "platform": "Whatsapp",
+      "href": "https://wa.me/919677447233?text=Hi%20I%20am%20interested%20in%20your%20products",
+      "icon": "Whatsapp"
+    }
+  ],
+  "copyright": "Copyright © 2026 Kodai Global Exports"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Ahmed Al-Fahad",
+    "role": "Saudi Arabia",
+    "avatar": "AA",
+    "rating": 5,
+    "comment": "Kodai Global Exports supplies high-quality sago and tapioca starch in both food and industrial grades. Secure packaging and on-time delivery make them a reliable supplier."
+  },
+  {
+    "name": "Thabo Mokoena",
+    "role": "South Africa",
+    "avatar": "TM",
+    "rating": 5,
+    "comment": "Kodai Global Exports delivers consistent-quality sago and tapioca starch. Their food and industrial grade products are handled with a professional export process."
+  },
+  {
+    "name": "Rahim Uddin",
+    "role": "Bangladesh",
+    "avatar": "RU",
+    "rating": 4.5,
+    "comment": "Kodai Global Exports offers food and industrial grade starch with consistent quality and competitive pricing. Shipments arrive well-packed and ready for distribution."
+  },
+  {
+    "name": "Nur Aisyah Rahman",
+    "role": "Malaysia",
+    "avatar": "NR",
+    "rating": 5,
+    "comment": "Kodai Global Exports supplies food-grade sago and tapioca starch with excellent texture and shelf life. Clear communication and reliable delivery throughout."
+  },
+  {
+    "name": "Kwame Mensah",
+    "role": "Ghana",
+    "avatar": "KM",
+    "rating": 4.5,
+    "comment": "Kodai Global Exports supplies international-standard sago and tapioca starch. On-time delivery and professional handling make them a trusted partner."
+  },
+  {
+    "name": "Tendai Chikore",
+    "role": "Zimbabwe",
+    "avatar": "TC",
+    "rating": 5,
+    "comment": "Kodai Global Exports provides sago and starch products that meet our quality standards. Packaging and delivery are always dependable."
+  }
+]

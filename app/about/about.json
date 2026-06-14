@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "title": "About Us | Kodai Global Exports",
+    "description": "Learn about Kodai Global Exports, a Tamilnadu-based agro export company supplying tapioca starch, sago, and tapioca products with disciplined processes, quality alignment, and reliable documentation.",
+    "keywords": [
+      "about Kodai Global Exports",
+      "tapioca exporter India",
+      "sago exporter Tamilnadu",
+      "agro export company India",
+      "tapioca starch supplier"
+    ],
+    "openGraph": {
+      "title": "About Us | Kodai Global Exports",
+      "description": "A professionally managed agro export company focused on reliable tapioca product supply from India.",
+      "type": "website"
+    }
+  },
+  "hero": {
+    "badge": "Corporate Heritage",
+    "title": "Bridging India's Agribusiness with {Global Markets}",
+    "subtitle": "Headquartered in Tamil Nadu, Kodai Global Exports is built on a foundation of integrity, sourcing excellence, and an unwavering commitment to delivering premium agro-commodities worldwide.",
+    "imageSrc": "/images/about-hero.webp",
+    "imageAlt": "Modern Kodai Global Exports office interior",
+    "buttonText": "Discover Our Operations",
+    "buttonHref": "#about-why-choose",
+    "features": [
+      "Rigorous Sourcing",
+      "Ethical Trade",
+      "Global Compliance"
+    ]
+  },
+  "whyChooseUs": {
+    "title": "Why Us?",
+    "subtitle": "A disciplined export approach",
+    "description": "Kodai Global Exports follows a {clear and quality-aligned process} for agricultural exports, with attention to consistency, documentation, regulatory requirements, and dependable shipment execution.",
+    "subDescription": "We focus on practical market understanding, transparent communication, and defined workflows so buyers can move from enquiry to shipment with confidence.",
+    "quote": "Our work is built around reliability, ethical practices, and a straightforward way of doing business across international markets.",
+    "badges": {
+      "tested": "Quality Aligned",
+      "origin": "Export Ready"
+    },
+    "stat": {
+      "value": "100%",
+      "label": "Process Focus"
+    },
+    "imageAlt": "Tapioca starch, sago, and cassava products prepared for export quality review",
+    "imageSrc": "/images/why-choose-us.png"
+  },
+  "missionVision": {
+    "bgAlt": "Tapioca and sago products with agricultural export setting",
+    "bgSrc": "/images/about-cta.webp",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To manage agricultural exports in an organised way, meet international requirements, and deliver products on time with proper documentation and steady communication."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To grow steadily in international agro markets through clear methods, consistent practices, and responsible business conduct."
+    }
+  },
+  "values": {
+    "tagline": "Our Foundation",
+    "title": "Values that guide every {export relationship}",
+    "items": [
+      {
+        "title": "Quality",
+        "description": "We follow quality assurance processes aligned with international buyer expectations.",
+        "details": "Products are handled with attention to consistency, packing, and specification alignment before shipment.",
+        "icon": "Award"
+      },
+      {
+        "title": "Commitment",
+        "description": "Customer satisfaction remains central to how we build long-term partnerships.",
+        "details": "We keep communication practical, responsive, and focused on the buyer's export requirements.",
+        "icon": "Handshake"
+      },
+      {
+        "title": "Transparency",
+        "description": "We conduct business with honesty, integrity, and clear communication.",
+        "details": "Documentation, terms, timelines, and product details are shared in a straightforward manner.",
+        "icon": "Eye"
+      },
+      {
+        "title": "Responsibility",
+        "description": "We follow applicable regulatory and export requirements for every shipment.",
+        "details": "Required documents are prepared according to buyer and importing country norms.",
+        "icon": "ShieldCheck"
+      },
+      {
+        "title": "Reliability",
+        "description": "We work toward consistent supply and dependable delivery across markets.",
+        "details": "Structured workflows help us maintain steady performance from enquiry through dispatch.",
+        "icon": "CheckCircle2"
+      },
+      {
+        "title": "Environment",
+        "description": "We support responsible business practices and care for the environment.",
+        "details": "Our approach values practical sustainability, compliance, and continuous improvement.",
+        "icon": "Leaf"
+      }
+    ]
+  },
+  "mdMessage": {
+    "title": "{Managing Director's} Message",
+    "imageSrc": "/images/md.png",
+    "imageAlt": "Tapioca and agro products representing Kodai Global Exports operations",
+    "paragraphs": [
+      "At Kodai Global Exports, our focus is to build a well-structured and dependable approach to agricultural exports. We believe consistent performance comes from clear processes, disciplined execution, and responsible business practices.",
+      "Our objective is to align our operations with international market expectations while maintaining transparency and operational clarity at every stage. By concentrating on process integrity and timely execution, we aim to support reliable outcomes and long-term business relationships.",
+      "As we continue to grow, Kodai Global Exports remains committed to professional conduct, continuous improvement, and steady progress in global markets. We value trust built through action and look forward to strengthening partnerships over time."
+    ]
+  },
+  "cta": {
+    "title": "Ready to discuss your tapioca product requirements?",
+    "description": "Connect with our export team for product specifications, packing options, documentation needs, and shipment discussions.",
+    "button": "Connect With Us Today",
+    "href": "/contact",
+    "imageSrc": "/images/about-cta.webp",
+    "imageAlt": "Tapioca starch, sago, and cassava roots arranged in a premium export setting"
+  }
+}

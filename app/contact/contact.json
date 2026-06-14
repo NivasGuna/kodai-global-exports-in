@@ -1,0 +1,110 @@
+{
+  "hero": {
+    "badge": "Global Partnerships",
+    "title": "Initiate Your {Export Supply Chain}",
+    "subtitle": "Whether you require a custom quote for industrial tapioca starch or are exploring reliable suppliers for spices and coffee, our dedicated export desk is ready to assist.",
+    "imageSrc": "/images/contact-hero.webp",
+    "imageAlt": "Global shipping and logistics containers",
+    "features": [
+      "Dedicated Account Managers",
+      "Fast Quotations",
+      "End-to-End Support"
+    ],
+    "buttonText": "Submit Inquiry",
+    "buttonHref": "#contact-form"
+  },
+  "form": {
+    "title": "Send us a Message",
+    "description": "Please share your enquiry using the form below for product information or export-related discussions.",
+    "buttonText": "Send Message",
+    "fields": {
+      "name": {
+        "label": "Your Name",
+        "placeholder": "Enter your name",
+        "error": {
+          "required": "Your name is required."
+        }
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "name@example.com",
+        "error": {
+          "required": "Email is required.",
+          "invalid": "Please provide a valid email format."
+        }
+      },
+      "country": {
+        "label": "Country",
+        "placeholder": "Enter your country",
+        "error": {
+          "required": "Country is required."
+        }
+      },
+      "message": {
+        "label": "Your Message",
+        "placeholder": "Tell us about the product, packing size, quantity, and destination country...",
+        "error": {
+          "required": "Message is required."
+        }
+      },
+      "robot": {
+        "label": "I confirm that I am not a robot",
+        "error": {
+          "required": "Please confirm you are not a robot."
+        }
+      }
+    }
+  },
+  "info": {
+    "title": "Contact Information",
+    "subtitle": "Reach us directly",
+    "items": [
+      {
+        "type": "address",
+        "label": "Location",
+        "value": "Kodai Global Exports, Periyakulam, Theni District - 625601, Tamilnadu, India.",
+        "icon": "MapPin"
+      },
+      {
+        "type": "email",
+        "label": "Email",
+        "value": "kge@kodaiglobalexports.com",
+        "icon": "Mail"
+      },
+      {
+        "type": "phone",
+        "label": "Phone",
+        "value": "+91 9677447233",
+        "icon": "Phone"
+      }
+    ]
+  },
+  "extra": {
+    "badge": "Business Enquiries",
+    "description": "For faster support, include the product name, required packing size, estimated quantity, destination country, and any document requirements in your message."
+  },
+  "map": {
+    "badge": "Location",
+    "title": "Business enquiry location",
+    "buttonText": "Open in Maps",
+    "accessibilityLabel": "Kodai Global Exports location map"
+  },
+  "cta": {
+    "badge": "Export Support",
+    "title": "Need product specifications or packing details?",
+    "description": "Connect with us for tapioca starch, sago, and tapioca product export enquiries. We will respond with clear next steps.",
+    "imageSrc": "/images/contact-cta.webp",
+    "imageAlt": "Tapioca products arranged with phone, email, and location enquiry icons",
+    "buttonText": "Email Us",
+    "buttonHref": "mailto:kge@kodaiglobalexports.com"
+  },
+  "status": {
+    "submitting": "Submitting...",
+    "success": "Sent Successfully",
+    "messages": {
+      "success": "Message sent successfully! We will get back to you soon.",
+      "error": "Failed to send message. Please try again.",
+      "unexpected": "An unexpected error occurred. Please try again later."
+    }
+  }
+}

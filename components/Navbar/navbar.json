@@ -1,0 +1,29 @@
+{
+  "navLinks": [
+    { "label": "Home", "href": "/" },
+    { "label": "About Us", "href": "/about" },
+    { "label": "FAQ's & Reviews", "href": "/faq-review" },
+    { "label": "Contact Us", "href": "/contact" }
+  ],
+  "productCategories": [
+    {
+      "title": "Agro",
+      "links": [
+        { "label": "Tapioca Starch", "href": "/products#tapioca-starch" },
+        { "label": "Tapioca Flour", "href": "/products#tapioca-flour" },
+        { "label": "Sago Varieties", "href": "/products#sago-varieties" }
+      ]
+    },
+    {
+      "title": "Spices",
+      "links": [
+        { "label": "Coffee Bean", "href": "/products#coffee-beans" },
+        { "label": "Clove", "href": "/products#clove" }
+      ]
+    }
+  ],
+  "productsMenu": {
+    "title": "Products",
+    "viewAll": "View All Products"
+  }
+}

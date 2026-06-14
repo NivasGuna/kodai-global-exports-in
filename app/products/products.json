@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "title": "Products | Premium Agro & Spices | Kodai Global Exports",
+    "description": "Explore Kodai Global Exports product range including food and industrial grade tapioca starch, tapioca flour, premium sago varieties, and fine spices like coffee beans and cloves.",
+    "keywords": [
+      "tapioca starch",
+      "tapioca flour",
+      "sago varieties",
+      "coffee beans robusta arabica",
+      "clove export",
+      "agro exporter India"
+    ],
+    "openGraph": {
+      "title": "Premium Agro & Spices | Kodai Global Exports",
+      "description": "High-quality agro products and spices supplied with consistency and export-focused standards.",
+      "type": "website"
+    }
+  },
+  "hero": {
+    "slides": [
+      {
+        "badge": "Tapioca Starch",
+        "title": "Premium {tapioca starch} for export",
+        "subtitle": "Food and industrial grade tapioca starch processed for purity, neutral taste, and excellent binding properties.",
+        "imageSrc": "/images/product-carousel-1.webp",
+        "imageAlt": "Tapioca starch and cassava roots"
+      },
+      {
+        "badge": "Tapioca Flour",
+        "title": "High quality {tapioca flour}",
+        "subtitle": "Finely milled cassava product valued for its light texture and versatility in baking and gluten-free foods.",
+        "imageSrc": "/images/product-carousel-2.webp",
+        "imageAlt": "Tapioca flour in a bowl"
+      },
+      {
+        "badge": "Sago Pearls",
+        "title": "Premium {sago varieties}",
+        "subtitle": "Clean appearance, uniform size, and excellent cooking consistency for various food applications.",
+        "imageSrc": "/images/product-carousel-3.webp",
+        "imageAlt": "Sago pearls in a bowl"
+      },
+      {
+        "badge": "Whole Spices",
+        "title": "Aromatic {premium cloves}",
+        "subtitle": "Carefully selected and graded cloves with strong aroma and flavor to meet international standards.",
+        "imageSrc": "/images/product-carousel-4.webp",
+        "imageAlt": "Cloves in a bowl"
+      },
+      {
+        "badge": "Coffee Beans",
+        "title": "Export-quality {coffee beans}",
+        "subtitle": "Robusta and Arabica varieties sourced for distinct flavor profiles and reliable supply.",
+        "imageSrc": "/images/product-carousel-5.webp",
+        "imageAlt": "Coffee beans and cherries"
+      }
+    ],
+    "badge": "Our Products",
+    "title": "Premium agro and spices supplied with {quality and consistency}",
+    "subtitle": "Handling bulk supply with structured documentation and clear communication.",
+    "features": ["Export Standards", "Reliable Sourcing", "Document Support"]
+  },
+  "range": {
+    "tagline": "Product Range",
+    "title": "Premium agro and spice products supplied with quality, consistency, and export-focused standards",
+    "ctaText": "Send Business Enquiry"
+  },
+  "qualityHighlights": {
+    "tagline": "Export Excellence",
+    "title": "Our commitment to {buyer satisfaction}",
+    "subtitle": "We ensure every shipment meets international standards with proper packaging and documentation.",
+    "items": [
+      { "title": "Quality Checked Products", "description": "Rigorous quality control for consistent export supply." },
+      { "title": "Export-Ready Packaging", "description": "Customizable and secure packing to meet destination requirements." },
+      { "title": "Reliable Sourcing", "description": "Directly sourced from trusted networks for dependable availability." },
+      { "title": "Buyer-Focused Supply", "description": "Clear communication, timely dispatch, and full document support." }
+    ]
+  },
+  "soon": {
+    "title": "Custom requirements welcome",
+    "description": "Share your destination country, product type, packing size, and expected quantity. We will review the requirement and respond with the next steps."
+  },
+  "ui": {
+    "moreDetails": "More Details",
+    "selected": "Selected",
+    "premiumGrade": "Export Grade",
+    "specifications": "Specifications",
+    "applications": "Applications"
+  }
+}
