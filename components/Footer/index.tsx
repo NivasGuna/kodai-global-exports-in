@@ -2,11 +2,13 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { FiMail, FiPhone, FiMapPin, FiSend } from 'react-icons/fi';
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { Copyright } from 'lucide-react';
 import Image from 'next/image';
 import footerData from './footer.json';
+import { isSamePageProductHash, pushProductHash } from '@/lib/productNavigation';
 
 const iconMap: Record<string, React.ElementType> = {
   Facebook: FaFacebook,
@@ -17,8 +19,17 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 export default function Footer() {
+  const pathname = usePathname();
+
   // Defensive check for footerData
   if (!footerData) return null;
+
+  const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (!isSamePageProductHash(href, pathname)) return;
+
+    event.preventDefault();
+    pushProductHash(href);
+  };
 
   return (
     <footer className="bg-kodai-dark text-white pt-20 pb-10 px-6">
@@ -64,6 +75,7 @@ export default function Footer() {
                     <li key={lIdx}>
                       <Link
                         href={link.href}
+                        onClick={(event) => handleLinkClick(event, link.href)}
                         className="text-gray-400 hover:text-kodai-green transition-colors text-sm font-medium flex items-center gap-2 group"
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-kodai-gold opacity-0 group-hover:opacity-100 transition-opacity" />

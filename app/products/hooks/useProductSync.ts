@@ -1,5 +1,51 @@
 import { useState, useEffect } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
+import { products } from '../data/products';
+
+type ProductHashTarget = {
+  productId: string;
+  typeId: string | null;
+};
+
+function normalizeHash(hash: string) {
+  try {
+    return decodeURIComponent(hash).trim().toLowerCase();
+  } catch {
+    return hash.trim().toLowerCase();
+  }
+}
+
+function resolveProductHash(hash: string): ProductHashTarget | null {
+  const normalizedHash = normalizeHash(hash);
+
+  if (!normalizedHash) {
+    return null;
+  }
+
+  for (const product of products) {
+    if (product.id === normalizedHash) {
+      return {
+        productId: product.id,
+        typeId: product.types[0]?.id ?? null,
+      };
+    }
+
+    const matchedType = product.types.find(
+      (type) =>
+        type.id === normalizedHash ||
+        `${product.id}-${type.id}` === normalizedHash
+    );
+
+    if (matchedType) {
+      return {
+        productId: product.id,
+        typeId: matchedType.id,
+      };
+    }
+  }
+
+  return null;
+}
 
 export function useProductSync() {
   const [activeProductId, setActiveProductId] = useState<string | null>(null);
@@ -9,66 +55,48 @@ export function useProductSync() {
 
   useEffect(() => {
     const handleSync = () => {
-      const hash = window.location.hash.replace('#', '');
-      if (!hash) {
+      const hash = window.location.hash.replace(/^#/, '');
+      const target = resolveProductHash(hash);
+
+      if (!target) {
         setActiveProductId(null);
         setActiveVarietyId(null);
         return;
       }
 
-      const normalizedHash = hash.toLowerCase();
-      setActiveVarietyId(normalizedHash);
+      setActiveProductId(target.productId);
+      setActiveVarietyId(target.typeId);
 
-      // Map variety-specific hashes to their main product card IDs
-      let matchedProductId: string | null = null;
-
-      if (normalizedHash === 'tapioca-starch' || normalizedHash === 'tapioca-starch-food-grade' || normalizedHash === 'tapioca-starch-industrial-grade') {
-        matchedProductId = 'tapioca-starch';
-      } else if (normalizedHash === 'tapioca-flour') {
-        matchedProductId = 'tapioca-flour';
-      } else if (['milk-white', 'glassy-nylon', 'mini-nylon', 'sago-sabudana', 'modidana', 'pappads'].includes(normalizedHash)) {
-        matchedProductId = 'sago-varieties';
-      } else if (normalizedHash === 'robusta' || normalizedHash === 'arabica' || normalizedHash === 'coffee-beans') {
-        matchedProductId = 'coffee-beans';
-      } else if (normalizedHash === 'clove') {
-        matchedProductId = 'clove';
-      }
-
-      if (matchedProductId) {
-        setActiveProductId(matchedProductId);
-
-        const el = document.getElementById(matchedProductId);
-        if (el) {
-          requestAnimationFrame(() => {
-            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          });
-        }
-      } else {
-        setActiveProductId(null);
+      const el = document.getElementById(target.productId);
+      if (el) {
+        requestAnimationFrame(() => {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
       }
     };
 
     // Delay slightly to allow full page mounting and DOM rendering
     const timer = setTimeout(handleSync, 100);
     window.addEventListener('hashchange', handleSync);
+    window.addEventListener('popstate', handleSync);
     
     return () => {
       clearTimeout(timer);
       window.removeEventListener('hashchange', handleSync);
+      window.removeEventListener('popstate', handleSync);
     };
   }, [pathname, searchParams]);
 
-  // Auto-clear product selection after scroll completes
+  // Clear only the temporary card highlight after scroll completes.
   useEffect(() => {
     if (activeProductId) {
       const timeout = setTimeout(() => {
         setActiveProductId(null);
         setActiveVarietyId(null);
-        window.history.replaceState(null, '', pathname);
       }, 4000);
       return () => clearTimeout(timeout);
     }
-  }, [activeProductId, pathname]);
+  }, [activeProductId, activeVarietyId]);
 
   return {
     activeProductId,

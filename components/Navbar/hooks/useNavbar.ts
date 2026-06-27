@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
+import { isSamePageProductHash, pushProductHash } from '@/lib/productNavigation';
 
 export function useNavbar() {
   const pathname = usePathname();
@@ -55,29 +56,31 @@ export function useNavbar() {
   };
 
   const handleProductClick = (e: React.MouseEvent | React.KeyboardEvent, href: string) => {
-    const [basePath, hash] = href.split('#');
+    const targetUrl = new URL(href, window.location.origin);
+    const targetPath = targetUrl.pathname;
 
-    if (pathname === basePath) {
+    if (isSamePageProductHash(href, pathname)) {
       e.preventDefault();
-      if (hash) {
-        window.history.replaceState(null, '', `${basePath}#${hash}`);
-        window.dispatchEvent(new Event('hashchange'));
-      } else {
-        window.history.replaceState(null, '', basePath);
-        window.dispatchEvent(new Event('hashchange'));
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
+      pushProductHash(href);
       setActiveMenu(undefined);
       setMenuOpen(false);
-    } else {
-      e.preventDefault();
-      setActiveMenu(undefined);
-      setMenuOpen(false);
-
-      setTimeout(() => {
-        router.push(href);
-      }, 10);
+      return;
     }
+
+    if (pathname === targetPath) {
+      e.preventDefault();
+      setActiveMenu(undefined);
+      setMenuOpen(false);
+      window.history.pushState(null, '', `${targetUrl.pathname}${targetUrl.search}`);
+      window.dispatchEvent(new Event('hashchange'));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    e.preventDefault();
+    setActiveMenu(undefined);
+    setMenuOpen(false);
+    router.push(href);
   };
 
   return {

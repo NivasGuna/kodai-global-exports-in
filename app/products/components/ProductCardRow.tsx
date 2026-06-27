@@ -37,18 +37,11 @@ export function ProductCardRow({ product, isHashActive, activeVarietyId, ui }: P
     if (!activeVarietyId) return;
 
     const normalizedVariety = activeVarietyId.toLowerCase();
-    let targetIndex = -1;
-
-    // Special cases for tapioca starch grades
-    if (product.id === 'tapioca-starch') {
-      if (normalizedVariety === 'tapioca-starch-food-grade') {
-        targetIndex = 0;
-      } else if (normalizedVariety === 'tapioca-starch-industrial-grade') {
-        targetIndex = 1;
-      }
-    } else {
-      targetIndex = product.types.findIndex((t) => t.id === normalizedVariety);
-    }
+    const targetIndex = product.types.findIndex(
+      (type) =>
+        type.id === normalizedVariety ||
+        `${product.id}-${type.id}` === normalizedVariety
+    );
 
     if (targetIndex !== -1) {
       setActiveTypeIndex(targetIndex);
