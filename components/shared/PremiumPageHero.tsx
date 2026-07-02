@@ -26,7 +26,7 @@ const heroTheme = {
     titleHighlight:
       'text-transparent bg-clip-text bg-gradient-to-r from-[#f6dc96] to-white font-black',
     titleClasses:
-      'text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black tracking-[-0.025em] leading-[0.9] drop-shadow-2xl',
+      'text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black tracking-[-0.025em] leading-20 drop-shadow-2xl',
     description: 'text-white/95 drop-shadow-md',
     trust: 'text-white drop-shadow-md',
     icon: 'text-[#f6dc96]',
@@ -108,7 +108,7 @@ export function PremiumPageHero({
       <div className="absolute inset-0 z-[5] bg-gradient-to-t from-black/80 via-black/40 to-transparent md:hidden" />
 
       {/* Gradient overlay for readability on desktop - widened and darkened */}
-      <div className="absolute inset-y-0 left-0 z-[5] hidden w-full bg-gradient-to-r from-black/50 to-transparent md:block md:w-[85%] lg:w-[75%]" />
+      <div className="absolute inset-y-0 left-0 z-[5] hidden w-full bg-gradient-to-r from-black/30 to-transparent md:block md:w-[85%] lg:w-[75%]" />
 
       {/* Content left aligned */}
       <div className="absolute inset-0 z-10 flex items-center justify-start text-left">
@@ -124,7 +124,7 @@ export function PremiumPageHero({
               <h1
                 className={cn(
                   'mt-3 text-balance break-normal font-quicksand leading-6',
-                  variant === 'about' ? 'max-w-4xl' : 'max-w-5xl',
+                  'max-w-5xl',
                   theme.title,
                   theme.titleClasses,
                 )}

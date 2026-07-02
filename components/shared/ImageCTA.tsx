@@ -57,7 +57,7 @@ export function ImageCTA({
         {/* Content */}
         <div
           className={cn(
-            'relative z-10 mx-auto flex h-[350px] items-center justify-center text-center px-6 py-14 sm:h-[450px] sm:px-10 lg:px-16',
+            'relative z-10 mx-auto flex min-h-[400px] items-center justify-center text-center px-6 py-16 sm:min-h-[450px] sm:px-10 lg:px-16',
             contentClassName,
           )}
         >

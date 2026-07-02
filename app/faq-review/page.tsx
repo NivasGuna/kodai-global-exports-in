@@ -49,7 +49,7 @@ export default function Page() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
 
               <div className="relative z-10 flex min-h-[520px] flex-col items-start justify-end p-8 sm:p-12">
-                <p className="text-xs font-bold uppercase tracking-[0.28em] text-kodai-gold">
+                <p className="text-xs font-bold uppercase tracking-[0.28em]">
                   {pageContent.contact.tagline}
                 </p>
                 <p className="mt-3 font-playfair text-3xl font-medium leading-tight text-white sm:text-4xl">
