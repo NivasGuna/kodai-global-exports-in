@@ -268,21 +268,21 @@ export default function AboutPage() {
       </section>
 
       <section className="mx-auto mt-24 max-w-[85rem] px-4 sm:px-6 md:px-10">
-        <div className="overflow-hidden rounded-[3rem] bg-[#faf6ee] shadow-2xl lg:grid lg:grid-cols-[0.8fr_1.2fr]">
-          <div className="relative min-h-[400px] lg:min-h-full overflow-hidden">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none lg:h-full lg:min-h-[500px] lg:aspect-auto overflow-hidden rounded-[2.5rem] shadow-2xl">
             <Image
               src={aboutData.mdMessage.imageSrc}
               alt={aboutData.mdMessage.imageAlt}
               fill
               sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
 
-          <div className="relative p-10 sm:p-14 lg:p-20 flex flex-col justify-center text-kodai-charcoal">
+          <div className="relative flex flex-col justify-center text-kodai-charcoal lg:pl-10">
             <div className="relative z-10">
               <Quote size={48} className="text-kodai-gold mb-6" />
-              <h2 className="font-playfair text-2xl font-medium leading-tight sm:text-3xl">
+              <h2 className="font-playfair text-3xl font-medium leading-tight sm:text-4xl">
                 <FormattedText
                   text={aboutData.mdMessage.title}
                   highlightClassName="text-kodai-gold italic"
