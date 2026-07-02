@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import { Inter, Playfair_Display, Geist } from 'next/font/google';
+import { Inter, Playfair_Display, Geist, Baloo_2, Nunito_Sans, Quicksand } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import Navbar from '@/components/Navbar';
@@ -19,6 +19,24 @@ const inter = Inter({
 const playfair = Playfair_Display({
   subsets: ['latin'],
   variable: '--font-playfair',
+  display: 'swap',
+});
+
+const baloo = Baloo_2({
+  subsets: ['latin'],
+  variable: '--font-baloo',
+  display: 'swap',
+});
+
+const nunitoSans = Nunito_Sans({
+  subsets: ['latin'],
+  variable: '--font-nunito-sans',
+  display: 'swap',
+});
+
+const quicksand = Quicksand({
+  subsets: ['latin'],
+  variable: '--font-quicksand',
   display: 'swap',
 });
 
@@ -127,6 +145,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         'antialiased',
         inter.variable,
         playfair.variable,
+        baloo.variable,
+        nunitoSans.variable,
+        quicksand.variable,
         'font-sans',
         geist.variable,
       )}

@@ -19,7 +19,11 @@ function ProductsContent() {
   return (
     <main className="pb-24 bg-white">
       {/* 1. Products Hero Section */}
-      <HeroCarousel slides={productsData.hero.slides} highlights={productsData.hero.features} />
+      <HeroCarousel
+        slides={productsData.hero.slides}
+        highlights={productsData.hero.features}
+        variant="product"
+      />
 
       {/* 2. Product Rows Section */}
       <section className="mx-auto mt-24 max-w-[85rem] px-4 sm:px-6 md:px-10">
@@ -61,7 +65,7 @@ function ProductsContent() {
                   </p>
                 </div>
               </div>
-              <Link 
+              <Link
                 href="/contact"
                 className="shrink-0 inline-flex items-center justify-center px-6 py-3 rounded-full bg-kodai-charcoal text-white hover:bg-kodai-gold text-xs font-bold uppercase tracking-widest transition-all duration-300 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-kodai-gold/50"
               >
@@ -85,21 +89,19 @@ function ProductsContent() {
         </div>
 
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {productsData.qualityHighlights.items.map((highlight: { title: string, description: string }, index: number) => (
-            <FadeIn key={highlight.title} delay={index * 0.1}>
-              <div className="group h-full bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#faf6ee] text-kodai-gold mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <CheckCircle2 size={24} />
+          {productsData.qualityHighlights.items.map(
+            (highlight: { title: string; description: string }, index: number) => (
+              <FadeIn key={highlight.title} delay={index * 0.1}>
+                <div className="group h-full bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#faf6ee] text-kodai-gold mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <CheckCircle2 size={24} />
+                  </div>
+                  <h3 className="text-lg font-bold text-kodai-charcoal mb-3">{highlight.title}</h3>
+                  <p className="text-gray-600 leading-relaxed text-sm">{highlight.description}</p>
                 </div>
-                <h3 className="text-lg font-bold text-kodai-charcoal mb-3">
-                  {highlight.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-sm">
-                  {highlight.description}
-                </p>
-              </div>
-            </FadeIn>
-          ))}
+              </FadeIn>
+            ),
+          )}
         </div>
       </section>
 

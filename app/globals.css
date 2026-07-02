@@ -45,6 +45,9 @@ body {
   --color-kodai-nav-active: var(--kodai-nav-active);
   --font-playfair: var(--font-playfair);
   --font-inter: var(--font-inter);
+  --font-baloo: var(--font-baloo, sans-serif);
+  --font-nunito-sans: var(--font-nunito-sans, sans-serif);
+  --font-quicksand: var(--font-quicksand, sans-serif);
 }
 
 body {

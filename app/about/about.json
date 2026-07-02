@@ -18,16 +18,12 @@
   "hero": {
     "badge": "Corporate Heritage",
     "title": "Bridging India's Agribusiness with {Global Markets}",
-    "subtitle": "Headquartered in Tamil Nadu, Kodai Global Exports is built on a foundation of integrity, sourcing excellence, and an unwavering commitment to delivering premium agro-commodities worldwide.",
+    "subtitle": "Headquartered in Tamil Nadu, Kodai Global Exports is built on integrity, sourcing excellence, and a disciplined approach to delivering premium agro-commodities worldwide.",
     "imageSrc": "/images/about-hero.webp",
     "imageAlt": "Modern Kodai Global Exports office interior",
     "buttonText": "Discover Our Operations",
     "buttonHref": "#about-why-choose",
-    "features": [
-      "Rigorous Sourcing",
-      "Ethical Trade",
-      "Global Compliance"
-    ]
+    "features": ["Rigorous Sourcing", "Ethical Trade", "Global Compliance"]
   },
   "whyChooseUs": {
     "title": "Why Us?",
